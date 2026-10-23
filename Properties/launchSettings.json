@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "LIA AGRO (HTTP)": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "pt",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "http://localhost:5123",
+      "dotnetRunMessages": true
+    },
+    "LIA AGRO (HTTPS)": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "pt",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:7123;http://localhost:5123",
+      "dotnetRunMessages": true
+    }
+  }
+}

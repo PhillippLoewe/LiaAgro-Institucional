@@ -1,0 +1,11 @@
+@page "/{lang}/contato"
+@model ContactModel
+@{
+    var lang = Model.Lang;
+    Func<string,string> t = k => I18n.Text(lang,k);
+    ViewData["Title"] = t("nav.contact");
+    ViewData["PageSlug"] = "contato";
+    ViewData["Description"] = t("contact.lead");
+}
+<section class="page-top page-top-contact"><div class="shell"><span class="eyebrow eyebrow-light">LIA AGRO · @t("nav.contact")</span><h1>@t("contact.headline")</h1><p>@t("contact.lead")</p></div></section>
+<section class="section"><div class="shell contact-grid"><div><span class="eyebrow">@t("contact.kicker")</span><h2>@t("contact.touch.title")</h2><p>@t("contact.touch.body")</p><div class="contact-items"><div><span class="contact-circle">✉</span><div><span class="overline">E-MAIL</span><a href="mailto:lia@liaagro.com.br">lia@liaagro.com.br</a></div></div><div><span class="contact-circle">☎</span><div><span class="overline">@t("contact.phone")</span><a href="tel:+556134781173">+55 (61) 3478-1173</a></div></div><div><span class="contact-circle">◎</span><div><span class="overline">WHATSAPP · @t("contact.main")</span><a href="https://wa.me/5561996476034" target="_blank" rel="noopener noreferrer">+55 (61) 99647-6034 ↗</a></div></div><div><span class="contact-circle">◎</span><div><span class="overline">WHATSAPP · @t("contact.secondary")</span><a href="https://wa.me/5561999815822" target="_blank" rel="noopener noreferrer">+55 (61) 99981-5822 ↗</a></div></div></div></div><div class="contact-card"><span class="eyebrow">LIA AGRO</span><h3>@t("contact.card.title")</h3><p>@t("contact.card.body")</p><a class="button button-primary" href="https://wa.me/5561996476034?text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20produtos%20LIA%20AGRO." target="_blank" rel="noopener noreferrer">@t("cta.talk") ↗</a><small>Brasília · Distrito Federal · Brasil</small></div></div></section>

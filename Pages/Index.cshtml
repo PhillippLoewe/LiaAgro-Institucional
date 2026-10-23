@@ -1,0 +1,42 @@
+@page "/{lang?}"
+@model IndexModel
+@{
+    var lang = Model.Lang;
+    Func<string, string> t = k => I18n.Text(lang, k);
+    ViewData["Title"] = t("home.title");
+    ViewData["PageSlug"] = "";
+    ViewData["Description"] = t("meta.desc");
+}
+<section class="hero-home">
+  <div class="hero-photo"></div>
+  <div class="hero-darken"></div>
+  <div class="shell hero-inner">
+    <div class="hero-copy">
+      <span class="eyebrow eyebrow-light"><span class="eyebrow-line"></span>@t("home.eyebrow")</span>
+      <h1>@t("home.headline")</h1>
+      <h2>@t("home.subheadline")</h2>
+      <p>@t("home.lead")</p>
+      <div class="hero-buttons"><a class="button button-primary" href="#produtos">@t("cta.products") <span aria-hidden="true">→</span></a><a class="button button-outline" href="/@lang/empresa">@t("cta.history") <span aria-hidden="true">↗</span></a></div>
+    </div>
+    <span class="hero-side-note">@t("home.side")</span>
+  </div>
+  <div class="hero-bottom-curve"></div>
+</section>
+<section class="qualities shell" aria-label="@t("home.features")">
+  <div class="quality"><div class="quality-icon">✦</div><div><strong>@t("quality.one.title")</strong><p>@t("quality.one.body")</p></div></div>
+  <div class="quality"><div class="quality-icon">✳</div><div><strong>@t("quality.two.title")</strong><p>@t("quality.two.body")</p></div></div>
+  <div class="quality"><div class="quality-icon">❀</div><div><strong>@t("quality.three.title")</strong><p>@t("quality.three.body")</p></div></div>
+  <div class="quality"><div class="quality-icon">◎</div><div><strong>@t("quality.four.title")</strong><p>@t("quality.four.body")</p></div></div>
+</section>
+<section id="produtos" class="section products-section">
+  <div class="shell">
+    <div class="section-intro two-col-intro"><div><span class="eyebrow">@t("products.kicker")</span><h2>@t("products.headline")</h2></div><p>@t("products.lead")</p></div>
+    <div class="product-cards">
+      <article class="product-card rocksil-card"><div class="product-card-copy"><span class="overline">@t("products.agri")</span><h3>ROCKSIL <small>PLUS®</small></h3><p>@t("rocksil.short")</p><a class="text-link" href="/@lang/rocksil">@t("cta.learn") <span aria-hidden="true">↗</span></a></div><img src="~/images/rocksil-cafe.webp" width="700" height="523" alt="@t("alt.coffee")" loading="lazy" /></article>
+      <article class="product-card protego-card"><div class="product-card-copy"><span class="overline">@t("products.food")</span><h3>PROTEGO <small>FL®</small></h3><p>@t("protego.short")</p><a class="text-link" href="/@lang/protego-fl">@t("cta.learn") <span aria-hidden="true">↗</span></a></div><img src="~/images/protego-frutas.webp" width="663" height="475" alt="@t("alt.fruits")" loading="lazy" /></article>
+    </div>
+  </div>
+</section>
+<section class="about-band section" id="empresa"><div class="shell about-band-inner"><div class="about-band-copy"><span class="eyebrow">@t("about.kicker")</span><h2>@t("about.headline")</h2><p>@t("about.summary")</p><a class="button button-dark" href="/@lang/empresa">@t("cta.history") <span aria-hidden="true">↗</span></a></div><div class="experience-visual"><div class="experience-numeral">35<span>+</span></div><p>@t("about.years")</p></div></div></section>
+<section class="section field-teaser"><div class="shell"><div class="section-intro two-col-intro"><div><span class="eyebrow">@t("field.kicker")</span><h2>@t("field.headline")</h2></div><p>@t("field.lead")</p></div><div class="field-tiles"><figure><img src="~/images/rocksil-dia-campo.webp" alt="@t("alt.fieldday")" loading="lazy" /><figcaption><strong>@t("field.cooxupe")</strong><span>@t("field.cooxupe.sub")</span></figcaption></figure><figure><img src="~/images/rocksil-morango.webp" alt="@t("alt.strawberry")" loading="lazy" /><figcaption><strong>@t("field.strawberry")</strong><span>@t("field.strawberry.sub")</span></figcaption></figure><figure><img src="~/images/rocksil-paprika.webp" alt="@t("alt.paprika")" loading="lazy" /><figcaption><strong>@t("field.paprika")</strong><span>@t("field.paprika.sub")</span></figcaption></figure></div><div class="section-footer-link"><a class="text-link" href="/@lang/rocksil#campo">@t("field.more") <span aria-hidden="true">↗</span></a></div></div></section>
+<section class="cta-strip"><div class="shell cta-inner"><div><span class="eyebrow eyebrow-light">@t("contact.kicker")</span><h2>@t("contact.headline")</h2><p>@t("contact.lead")</p></div><a class="button button-light" href="https://wa.me/5561996476034" target="_blank" rel="noopener noreferrer">@t("cta.talk") <span aria-hidden="true">↗</span></a></div></section>

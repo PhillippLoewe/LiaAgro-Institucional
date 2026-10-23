@@ -1,0 +1,9 @@
+# .NET and Visual Studio generated folders
+bin/
+obj/
+.vs/
+*.user
+*.suo
+.vscode/
+.idea/
+.DS_Store

@@ -1,0 +1,25 @@
+@page "/{lang}/empresa"
+@model AboutModel
+@{
+    var lang = Model.Lang;
+    Func<string,string> t = k => I18n.Text(lang,k);
+    ViewData["Title"] = t("about.page.title");
+    ViewData["PageSlug"] = "empresa";
+    ViewData["Description"] = t("about.page.lead");
+}
+<section class="page-top page-top-about"><div class="shell"><span class="eyebrow eyebrow-light">LIA AGRO · @t("about.kicker")</span><h1>@t("about.page.title")</h1><p>@t("about.page.lead")</p></div></section>
+<section class="section story-section"><div class="shell story-layout"><div><span class="eyebrow">@t("about.kicker")</span><h2>@t("about.headline")</h2><p>@t("about.paragraph1")</p><p>@t("about.paragraph2")</p><p>@t("about.paragraph3")</p></div><aside class="story-callout"><span class="story-big">35+</span><h3>@t("about.years")</h3><p>@t("about.export")</p></aside></div></section>
+<section class="section membership-section" aria-labelledby="ifoam-heading">
+  <div class="shell membership-layout">
+    <div class="membership-logo-panel">
+      <img src="~/images/ifoam-organics-international.webp" alt="IFOAM – Organics International" width="330" height="280" loading="lazy" />
+    </div>
+    <div class="membership-copy">
+      <span class="eyebrow">@t("ifoam.kicker")</span>
+      <h2 id="ifoam-heading">@t("ifoam.title")</h2>
+      <p>@t("ifoam.body")</p>
+    </div>
+  </div>
+</section>
+<section class="section soft-bg"><div class="shell"><div class="section-intro"><span class="eyebrow">@t("about.values.kicker")</span><h2>@t("about.values.title")</h2></div><div class="info-columns"><article><span class="card-number">01</span><h3>@t("quality.one.title")</h3><p>@t("quality.one.body")</p></article><article><span class="card-number">02</span><h3>@t("quality.two.title")</h3><p>@t("quality.two.body")</p></article><article><span class="card-number">03</span><h3>@t("quality.four.title")</h3><p>@t("quality.four.body")</p></article></div></div></section>
+<section class="cta-strip"><div class="shell cta-inner"><div><span class="eyebrow eyebrow-light">@t("products.kicker")</span><h2>@t("about.products.cta")</h2></div><a class="button button-light" href="/@lang#produtos">@t("cta.products") →</a></div></section>
