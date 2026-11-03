@@ -7,7 +7,21 @@
     ViewData["PageSlug"] = "empresa";
     ViewData["Description"] = t("about.page.lead");
 }
-<section class="page-top page-top-about"><div class="shell"><span class="eyebrow eyebrow-light">LIA AGRO · @t("about.kicker")</span><h1>@t("about.page.title")</h1><p>@t("about.page.lead")</p></div></section>
+<section class="page-top page-top-about">
+  <div class="shell about-hero-layout">
+    <div class="about-hero-copy">
+      <span class="eyebrow eyebrow-light">LIA AGRO · @t("about.kicker")</span>
+      <h1>@t("about.page.title")</h1>
+      <p>@t("about.page.lead")</p>
+    </div>
+    <figure class="about-world-map" aria-label="@t("about.map.alt")">
+      <img src="@($"/images/mapa-presenca-internacional-{lang}.svg")" width="900" height="410" alt="" aria-hidden="true" decoding="async" />
+      <figcaption class="about-map-caption">
+        <span class="about-map-caption-title">@t("about.map.caption")</span>
+      </figcaption>
+    </figure>
+  </div>
+</section>
 <section class="section story-section"><div class="shell story-layout"><div><span class="eyebrow">@t("about.kicker")</span><h2>@t("about.headline")</h2><p>@t("about.paragraph1")</p><p>@t("about.paragraph2")</p><p>@t("about.paragraph3")</p></div><aside class="story-callout"><span class="story-big">35+</span><h3>@t("about.years")</h3><p>@t("about.export")</p></aside></div></section>
 <section class="section membership-section" aria-labelledby="ifoam-heading">
   <div class="shell membership-layout">
