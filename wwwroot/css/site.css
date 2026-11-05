@@ -49,3 +49,32 @@
 @media(max-width:1250px){.brand{min-width:195px;gap:8px}.brand-logo{width:58px;height:58px}.brand-copy strong{font-size:22px}.brand-copy small{font-size:6.8px}}
 @media(max-width:770px){.brand{min-width:0;gap:8px}.brand-logo{width:53px;height:53px}.brand-copy strong{font-size:21px}.brand-copy small{font-size:6.8px}.membership-section{padding:50px 0}.membership-layout{grid-template-columns:1fr;gap:25px}.membership-logo-panel{min-height:155px;padding:20px}.membership-logo-panel img{max-height:130px}}
 @media(max-width:480px){.brand-logo{width:47px;height:47px}.brand-copy strong{font-size:19px}.brand-copy small{font-size:6px;max-width:122px;line-height:1.25}.membership-layout{padding:22px}.membership-copy p{font-size:15px}}
+
+/* Nossa História: presença internacional dentro da faixa verde */
+.page-top-about{padding:68px 0 70px;isolation:isolate}
+.page-top-about .about-hero-layout{display:grid;grid-template-columns:minmax(0,.90fr) minmax(0,1.1fr);align-items:center;gap:clamp(22px,3vw,55px)}
+.about-hero-copy{position:relative;z-index:1;min-width:0}
+.page-top-about .about-hero-copy h1{max-width:570px;line-height:1.08;text-wrap:balance}
+.page-top-about .about-hero-copy p{max-width:510px;line-height:1.65}
+.about-world-map{margin:0;min-width:0;position:relative;display:flex;flex-direction:column;align-items:stretch;justify-content:center}
+.about-world-map img{display:block;width:100%;height:auto;max-height:330px;object-fit:contain;filter:drop-shadow(0 14px 34px rgba(0,22,12,.12))}
+.about-map-caption{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:0 16px;margin-top:-2px;color:#eaf6e8}
+.about-map-caption-title{font-size:11px;letter-spacing:.11em;text-transform:uppercase;font-weight:800;color:#cae6bb}
+.about-map-places{font-size:12px;font-weight:700;letter-spacing:.02em;white-space:normal}
+.about-map-places span{color:#cceba7;margin:0 4px}
+.about-map-places .about-map-separator{opacity:.55;margin:0 7px}
+@media(max-width:900px){
+  .page-top-about{padding:64px 0 65px}
+  .page-top-about .about-hero-layout{grid-template-columns:1fr;gap:22px}
+  .about-world-map{width:min(100%,700px);margin-inline:auto}
+  .about-world-map img{max-height:none}
+  .about-map-caption{padding:0 12px}
+}
+@media(max-width:480px){
+  .page-top-about{padding:53px 0 55px}
+  .about-world-map{margin-top:0}
+  .about-map-caption{flex-direction:column;gap:5px}
+  .about-map-caption-title{font-size:10px}
+  .about-map-places{font-size:11px}
+}
+

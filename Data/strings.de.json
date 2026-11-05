@@ -108,7 +108,7 @@
   "protego.hero": "Technische Lösungen für Obst und Gemüse.",
   "protego.lead": "Ein technisches Hilfsmittel auf Basis von Kieselgur und Zitronensäure zur Behandlung von Obst und Gemüse.",
   "protego.what.kicker": "ÜBER PROTEGO FL",
-  "protego.what.title": "Technologie für die Haltbarkeit von Lebensmitteln.",
+  "protego.what.title": "Technologie zur Lebensmittelkonservierung für die Agrar- und Lebensmittelindustrie.",
   "protego.what.body": "PROTEGO FL wurde zur Unterstützung der Reinigung und Frischhaltung frischer oder verarbeiteter Obst- und Gemüseprodukte entwickelt.",
   "protego.what.body2": "Das Produkt kann Bräunung und Verfärbung begrenzen und unter den vorgesehenen Anwendungsbedingungen zur Verringerung der mikrobiellen Aktivität beitragen.",
   "protego.benefits.kicker": "WICHTIGSTE VORTEILE",
@@ -152,5 +152,10 @@
   "footer.rights": "Alle Rechte vorbehalten",
   "ifoam.kicker": "ENGAGEMENT FÜR DEN ÖKOLOGISCHEN LANDBAU",
   "ifoam.title": "Mitglied von IFOAM – Organics International.",
-  "ifoam.body": "LIA AGRO ist Mitglied von IFOAM – Organics International und unterstreicht damit sein Engagement für den ökologischen Landbau und die Entwicklung von Lösungen für die landwirtschaftliche Bewirtschaftung."
+  "ifoam.body": "LIA AGRO ist Mitglied von IFOAM – Organics International und unterstreicht damit sein Engagement für den ökologischen Landbau und die Entwicklung von Lösungen für die landwirtschaftliche Bewirtschaftung.",
+  "about.map.caption": "Internationale Präsenz",
+  "about.map.brazil": "Brasilien",
+  "about.map.europe": "Europa",
+  "about.map.asia": "Asien",
+  "about.map.alt": "Karte mit schematischen Verbindungen von Brasilien nach Europa und Asien."
 }

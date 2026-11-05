@@ -108,7 +108,7 @@
   "protego.hero": "Tecnologia per la cura di frutta e verdura.",
   "protego.lead": "Coadiuvante tecnico a base di terra diatomacea e acido citrico per il trattamento di frutta e verdura.",
   "protego.what.kicker": "COS’È PROTEGO FL",
-  "protego.what.title": "Tecnologia per la conservazione degli alimenti.",
+  "protego.what.title": "Tecnologia applicata alla conservazione degli alimenti per le industrie agroalimentari.",
   "protego.what.body": "PROTEGO FL è stato sviluppato per supportare lavaggio e conservazione di frutta, ortaggi e verdure a foglia, freschi o lavorati.",
   "protego.what.body2": "Il prodotto aiuta a prevenire imbrunimento e scolorimento e contribuisce a ridurre l’attività microbica nelle condizioni d’uso previste.",
   "protego.benefits.kicker": "PRINCIPALI BENEFICI",
@@ -152,5 +152,10 @@
   "footer.rights": "Tutti i diritti riservati",
   "ifoam.kicker": "IMPEGNO PER L’AGRICOLTURA BIOLOGICA",
   "ifoam.title": "Membro di IFOAM – Organics International.",
-  "ifoam.body": "LIA AGRO è membro di IFOAM – Organics International, a conferma del suo impegno per l’agricoltura biologica e lo sviluppo di soluzioni per la gestione agricola."
+  "ifoam.body": "LIA AGRO è membro di IFOAM – Organics International, a conferma del suo impegno per l’agricoltura biologica e lo sviluppo di soluzioni per la gestione agricola.",
+  "about.map.caption": "Presenza internazionale",
+  "about.map.brazil": "Brasile",
+  "about.map.europe": "Europa",
+  "about.map.asia": "Asia",
+  "about.map.alt": "Mappa con collegamenti illustrativi dal Brasile verso Europa e Asia."
 }

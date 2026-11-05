@@ -108,7 +108,7 @@
   "protego.hero": "Une approche technique pour les fruits et légumes.",
   "protego.lead": "Auxiliaire technique à base de terre de diatomée et d’acide citrique pour le traitement des fruits et légumes.",
   "protego.what.kicker": "À PROPOS DE PROTEGO FL",
-  "protego.what.title": "Une technologie pour la conservation des aliments.",
+  "protego.what.title": "Technologie appliquée à la conservation des aliments pour les industries agroalimentaires.",
   "protego.what.body": "PROTEGO FL a été développé pour contribuer au lavage et à la conservation des fruits, légumes et légumes-feuilles, frais ou transformés.",
   "protego.what.body2": "Le produit aide à limiter le brunissement et la décoloration et contribue à réduire l’activité microbienne dans les conditions d’utilisation prévues.",
   "protego.benefits.kicker": "PRINCIPAUX AVANTAGES",
@@ -152,5 +152,10 @@
   "footer.rights": "Tous droits réservés",
   "ifoam.kicker": "ENGAGEMENT EN FAVEUR DE L’AGRICULTURE BIOLOGIQUE",
   "ifoam.title": "Membre de l’IFOAM – Organics International.",
-  "ifoam.body": "LIA AGRO est membre de l’IFOAM – Organics International, témoignant de son engagement envers l’agriculture biologique et le développement de solutions pour les pratiques agricoles."
+  "ifoam.body": "LIA AGRO est membre de l’IFOAM – Organics International, témoignant de son engagement envers l’agriculture biologique et le développement de solutions pour les pratiques agricoles.",
+  "about.map.caption": "Présence internationale",
+  "about.map.brazil": "Brésil",
+  "about.map.europe": "Europe",
+  "about.map.asia": "Asie",
+  "about.map.alt": "Carte montrant des liaisons illustratives du Brésil vers les régions européennes et asiatiques."
 }

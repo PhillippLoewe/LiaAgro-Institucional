@@ -108,7 +108,7 @@
   "protego.hero": "Technical care for fruit and vegetables.",
   "protego.lead": "A technical processing aid based on diatomaceous earth and citric acid, intended for fruit and vegetable treatment.",
   "protego.what.kicker": "ABOUT PROTEGO FL",
-  "protego.what.title": "Technology supporting food preservation.",
+  "protego.what.title": "Technology applied to food preservation for the food processing industry.",
   "protego.what.body": "PROTEGO FL was developed to support washing and preservation processes for fresh or processed fruits, vegetables and leafy greens.",
   "protego.what.body2": "The product helps limit browning and discoloration and contributes to reducing microbial activity under the specified conditions of use.",
   "protego.benefits.kicker": "KEY BENEFITS",
@@ -152,5 +152,10 @@
   "footer.rights": "All rights reserved",
   "ifoam.kicker": "COMMITMENT TO ORGANIC AGRICULTURE",
   "ifoam.title": "Member of IFOAM – Organics International.",
-  "ifoam.body": "LIA AGRO is a member of IFOAM – Organics International, reflecting its commitment to organic agriculture and the development of solutions for agricultural management."
+  "ifoam.body": "LIA AGRO is a member of IFOAM – Organics International, reflecting its commitment to organic agriculture and the development of solutions for agricultural management.",
+  "about.map.caption": "International presence",
+  "about.map.brazil": "Brazil",
+  "about.map.europe": "Europe",
+  "about.map.asia": "Asia",
+  "about.map.alt": "Map with illustrative routes from Brazil to Europe and Asia."
 }

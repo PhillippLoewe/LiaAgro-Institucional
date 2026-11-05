@@ -108,7 +108,7 @@
   "protego.hero": "Cuidado técnico para frutas e vegetais.",
   "protego.lead": "Coadjuvante técnico à base de terra diatomácea e ácido cítrico, destinado ao tratamento de frutas e vegetais.",
   "protego.what.kicker": "SOBRE O PROTEGO FL",
-  "protego.what.title": "Tecnologia aplicada à conservação de alimentos.",
+  "protego.what.title": "Tecnologia aplicada à conservação de alimentos para agroindústrias.",
   "protego.what.body": "O PROTEGO FL foi desenvolvido para auxiliar nos processos de higienização e conservação de frutas, legumes e folhosas, tanto in natura quanto processados.",
   "protego.what.body2": "O produto auxilia na prevenção do escurecimento e da descoloração e contribui para a redução da atividade microbiana, conforme as condições de utilização.",
   "protego.benefits.kicker": "PRINCIPAIS BENEFÍCIOS",
@@ -152,5 +152,10 @@
   "footer.rights": "Todos os direitos reservados",
   "ifoam.kicker": "COMPROMISSO COM A AGRICULTURA ORGÂNICA",
   "ifoam.title": "Membro da IFOAM – Organics International.",
-  "ifoam.body": "A LIA AGRO integra a IFOAM – Organics International como membro, reforçando seu compromisso com a agricultura orgânica e o desenvolvimento de soluções para o manejo agrícola."
+  "ifoam.body": "A LIA AGRO integra a IFOAM – Organics International como membro, reforçando seu compromisso com a agricultura orgânica e o desenvolvimento de soluções para o manejo agrícola.",
+  "about.map.caption": "Presença internacional",
+  "about.map.brazil": "Brasil",
+  "about.map.europe": "Europa",
+  "about.map.asia": "Ásia",
+  "about.map.alt": "Mapa com rotas ilustrativas do Brasil para a Europa e a Ásia."
 }
