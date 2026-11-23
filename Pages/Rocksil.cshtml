@@ -2,14 +2,171 @@
 @model RocksilModel
 @{
     var lang = Model.Lang;
-    Func<string,string> t = k => I18n.Text(lang,k);
+    Func<string, string> t = key => I18n.Text(lang, key);
+    Func<string, string> d = key => t("rocksil.doc." + key);
     ViewData["Title"] = "ROCKSIL® PLUS";
     ViewData["PageSlug"] = "rocksil";
-    ViewData["Description"] = t("rocksil.short");
+    ViewData["Description"] = d("intro.p1");
 }
-<section class="product-page-hero rocksil-hero"><div class="shell product-hero-grid"><div class="product-hero-copy"><span class="eyebrow eyebrow-light">LIA AGRO · @t("products.agri")</span><h1>ROCKSIL<sup class="registered-mark">®</sup> <span>PLUS</span></h1><h2>@t("rocksil.hero")</h2><p>@t("rocksil.lead")</p><a class="button button-primary" href="#detalhes">@t("cta.discover") ↓</a></div><div class="product-hero-photo"><img src="~/images/rocksil-cafe.webp" alt="@t("alt.coffee")" /></div></div></section>
-<section class="section" id="detalhes"><div class="shell split-section"><div><span class="eyebrow">@t("rocksil.what.kicker")</span><h2>@t("rocksil.what.title")</h2><p>@t("rocksil.what.body")</p><p>@t("rocksil.what.body2")</p></div><div class="mineral-note"><span class="mini-asterisk">✳</span><h3>@t("rocksil.note.title")</h3><p>@t("rocksil.note.body")</p><div class="mineral-chips"><span>Ca</span><span>Mg</span><span>S</span></div></div></div></section>
-<section class="section soft-bg"><div class="shell"><div class="section-intro"><span class="eyebrow">@t("rocksil.benefits.kicker")</span><h2>@t("rocksil.benefits.title")</h2></div><div class="info-columns four"><article><span class="card-number">01</span><h3>@t("rocksil.benefit1.title")</h3><p>@t("rocksil.benefit1.body")</p></article><article><span class="card-number">02</span><h3>@t("rocksil.benefit2.title")</h3><p>@t("rocksil.benefit2.body")</p></article><article><span class="card-number">03</span><h3>@t("rocksil.benefit3.title")</h3><p>@t("rocksil.benefit3.body")</p></article><article><span class="card-number">04</span><h3>@t("rocksil.benefit4.title")</h3><p>@t("rocksil.benefit4.body")</p></article></div></div></section>
-<section class="section" id="campo"><div class="shell"><div class="section-intro two-col-intro"><div><span class="eyebrow">@t("field.kicker")</span><h2>@t("field.headline")</h2></div><p>@t("field.lead")</p></div><div class="gallery-grid"><figure><a href="/images/rocksil-dia-campo.webp" target="_blank" rel="noopener noreferrer"><img src="~/images/rocksil-dia-campo.webp" alt="@t("alt.fieldday")" loading="lazy" /></a><figcaption><strong>@t("field.cooxupe")</strong><span>@t("field.cooxupe.sub")</span></figcaption></figure><figure><a href="/images/rocksil-cafe.webp" target="_blank" rel="noopener noreferrer"><img src="~/images/rocksil-cafe.webp" alt="@t("alt.coffee")" loading="lazy" /></a><figcaption><strong>@t("field.coffee")</strong><span>@t("field.coffee.sub")</span></figcaption></figure><figure><a href="/images/rocksil-morango.webp" target="_blank" rel="noopener noreferrer"><img src="~/images/rocksil-morango.webp" alt="@t("alt.strawberry")" loading="lazy" /></a><figcaption><strong>@t("field.strawberry")</strong><span>@t("field.strawberry.sub")</span></figcaption></figure><figure><a href="/images/rocksil-paprika.webp" target="_blank" rel="noopener noreferrer"><img src="~/images/rocksil-paprika.webp" alt="@t("alt.paprika")" loading="lazy" /></a><figcaption><strong>@t("field.paprika")</strong><span>@t("field.paprika.sub")</span></figcaption></figure></div></div></section>
-<section class="section soft-bg"><div class="shell tech-layout"><div><span class="eyebrow">@t("tech.kicker")</span><h2>@t("tech.headline")</h2><p>@t("rocksil.tech.body")</p><div class="tech-table"><div><strong>@t("tech.classification")</strong><span>@t("rocksil.tech.class")</span></div><div><strong>@t("tech.composition")</strong><span>@t("rocksil.tech.composition")</span></div><div><strong>@t("tech.package")</strong><span>5 kg</span></div><div><strong>@t("tech.validity")</strong><span>@t("rocksil.tech.validity")</span></div></div><p class="legal-note">@t("rocksil.tech.note")</p></div><div class="technical-image"><img src="~/images/rocksil-embalagem.webp" alt="@t("alt.rocksilpackage")" loading="lazy" /></div></div></section>
-<section class="cta-strip"><div class="shell cta-inner"><div><span class="eyebrow eyebrow-light">ROCKSIL® PLUS</span><h2>@t("rocksil.cta")</h2></div><a class="button button-light" href="/@lang/contato">@t("cta.talk") ↗</a></div></section>
+<section class="product-page-hero rocksil-hero">
+  <div class="shell rocksil-hero-simple">
+    <div class="product-hero-copy">
+      <span class="eyebrow eyebrow-light">LIA AGRO · @t("products.agri")</span>
+      <h1 class="rocksil-word-title" aria-label="ROCKSIL® PLUS">ROCKS<span class="rocksil-letter-i">I<img src="~/images/rocksil-folha-nitida.svg" asp-append-version="true" alt="" aria-hidden="true" width="304" height="215" /></span>L<sup class="registered-mark">®</sup> <span class="rocksil-plus-word">PLUS</span></h1>
+      <h2>@d("tagline")</h2>
+      <p>@d("intro.p2")</p>
+      <a class="button button-primary" href="#sobre">@t("cta.discover") <span aria-hidden="true">↓</span></a>
+    </div>
+  </div>
+</section>
+<section class="section rocksil-overview-section" id="sobre">
+  <div class="shell rocksil-overview">
+    <div class="rocksil-overview-heading">
+      <span class="eyebrow">ROCKSIL® PLUS</span>
+      <h2>@d("intro.title")</h2>
+      <p class="rocksil-overview-lead">@d("intro.p1")</p>
+    </div>
+    <div class="rocksil-overview-features" aria-label="@d("features.title")">
+      <div class="rocksil-overview-feature">
+        <span class="rocksil-feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m2 20 7-11 5 7 3-4 5 8H2Z"/><path d="m7 12 2-3 3 4"/></svg></span>
+        <strong>@d("feature.mineral")</strong>
+      </div>
+      <div class="rocksil-overview-feature">
+        <span class="rocksil-feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c-3.1 4.5-7 8.6-7 12a7 7 0 0 0 14 0c0-3.4-3.9-7.5-7-12Z"/><path d="M9 17a3.5 3.5 0 0 0 3 2"/></svg></span>
+        <strong>@d("feature.water")</strong>
+      </div>
+      <div class="rocksil-overview-feature">
+        <span class="rocksil-feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 4c-8 .1-14 3.6-14 10a6 6 0 0 0 6 6c6.4 0 9.9-6 10-14l-2-2Z"/><path d="M4 22c3.5-7 8-10.5 15-14"/></svg></span>
+        <strong>@d("feature.foliar")</strong>
+      </div>
+    </div>
+    <div class="rocksil-overview-description">
+      <p>@d("intro.p2")</p>
+      <p>@d("intro.p3")</p>
+      <p>@d("intro.p4")</p>
+    </div>
+  </div>
+</section>
+<section class="section rocksil-material-section">
+  <div class="shell">
+    <div class="rocksil-material-card">
+      <div class="rocksil-material-head">
+        <span class="rocksil-material-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m3 7 9-4 9 4-9 4-9-4Z"/><path d="m3 12 9 4 9-4"/><path d="m3 17 9 4 9-4"/></svg></span>
+        <h2>@d("base.title")</h2>
+      </div>
+      <div class="rocksil-material-text">
+        <p>@d("base.p1")</p>
+        <p>@d("base.p2")</p>
+        <p>@d("base.p3")</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section"><div class="shell">
+  <div class="section-intro"><h2>@d("elements.title")</h2></div>
+  <div class="rocksil-elements">
+    <article><span class="rocksil-element-symbol">Si</span><h3>@(lang switch { "en" => "Silicon", "es" => "Silicio", "it" => "Silicio", "de" => "Silizium", "fr" => "Silicium", _ => "Silício" })</h3><p>@d("element.si")</p></article>
+    <article><span class="rocksil-element-symbol">S</span><h3>@(lang switch { "en" => "Sulfur", "es" => "Azufre", "it" => "Zolfo", "de" => "Schwefel", "fr" => "Soufre", _ => "Enxofre" })</h3><p>@d("element.s")</p></article>
+    <article><span class="rocksil-element-symbol">Mg</span><h3>@(lang switch { "en" => "Magnesium", "es" => "Magnesio", "it" => "Magnesio", "de" => "Magnesium", "fr" => "Magnésium", _ => "Magnésio" })</h3><p>@d("element.mg")</p></article>
+    <article><span class="rocksil-element-symbol">Ca</span><h3>@(lang switch { "en" => "Calcium", "es" => "Calcio", "it" => "Calcio", "de" => "Calcium", "fr" => "Calcium", _ => "Cálcio" })</h3><p>@d("element.ca")</p></article>
+    <article><span class="rocksil-element-symbol">Ti</span><h3>@(lang switch { "en" => "Titanium", "es" => "Titanio", "it" => "Titanio", "de" => "Titan", "fr" => "Titane", _ => "Titânio" })</h3><p>@d("element.ti")</p></article>
+    <article><span class="rocksil-element-symbol">Fe</span><h3>@(lang switch { "en" => "Iron", "es" => "Hierro", "it" => "Ferro", "de" => "Eisen", "fr" => "Fer", _ => "Ferro" })</h3><p>@d("element.fe")</p></article>
+  </div>
+</div></section>
+<section class="section soft-bg"><div class="shell">
+  <div class="section-intro"><h2>@d("tech.title")</h2><p class="rocksil-section-lead">@d("tech.composition")</p></div>
+  <div class="rocksil-tech-grid rocksil-tech-stacked">
+    <div class="rocksil-composition-wrap"><table class="rocksil-composition"><thead><tr><th scope="col">SiO₂</th><th scope="col">S</th><th scope="col">MgO</th><th scope="col">CaO</th><th scope="col">TiO₂</th><th scope="col">Fe₂O₃</th></tr></thead><tbody><tr><td>7%</td><td>10%</td><td>1%</td><td>1%</td><td>0,34%</td><td>0,16%</td></tr></tbody></table></div>
+    <div class="rocksil-storage-row">
+      <div class="rocksil-storage"><span class="rocksil-storage-icon" aria-hidden="true">⌂</span><div><h3>@d("tech.storage.title")</h3><p>@d("tech.storage")</p></div></div>
+      <div class="rocksil-storage"><span class="rocksil-storage-icon" aria-hidden="true">▣</span><div><h3>@d("tech.pack.title")</h3><p>@d("tech.pack")</p></div></div>
+    </div>
+  </div>
+</div></section>
+<section class="section" id="preparo"><div class="shell">
+  <div class="section-intro"><h2>@d("prep.title")</h2><p class="rocksil-section-lead">@d("prep.lead")</p></div>
+  <figure class="rocksil-prep-figure"><img src="~/images/rocksil-doc-preparo.webp" asp-append-version="true" alt="@d("img.prep")" width="3189" height="758" loading="lazy" /><figcaption>@d("prep.fig")</figcaption></figure>
+  <div class="rocksil-dose-table"><table><thead><tr><th scope="col">@d("prep.dose")</th><th scope="col">@d("prep.quantity")</th></tr></thead><tbody>
+   <tr><th scope="row">0,5%</th><td>500 g</td></tr><tr><th scope="row">1,0%</th><td>1.000 g</td></tr><tr><th scope="row">1,5%</th><td>1.500 g</td></tr><tr><th scope="row">2,0%</th><td>2.000 g</td></tr>
+  </tbody></table></div>
+  <div class="rocksil-prep-notes"><p>@d("prep.apply")</p><p>@d("prep.restriction")</p><p>@d("prep.warning")</p></div>
+</div></section>
+<section class="section soft-bg rocksil-cultures" id="campo"><div class="shell">
+  <div class="section-intro rocksil-cultures-intro"><span class="eyebrow">ROCKSIL® PLUS</span><h2>@d("crops.title")</h2><p class="rocksil-section-lead">@d("crops.choose")</p></div>
+  <div class="rocksil-culture-tiles" role="group" aria-label="@d("crops.title")">
+    <button class="rocksil-culture-tile" type="button" data-rocksil-culture="tomato" aria-controls="rocksil-culture-details" aria-expanded="false" aria-label="@d("crops.open"): @d("crop.tomato")">
+      <span class="rocksil-culture-tile-photo"><img src="~/images/rocksil-doc-tomate.webp" asp-append-version="true" alt="@d("crop.tomato")" width="1250" height="1851" loading="lazy" /></span>
+      <span class="rocksil-culture-tile-label"><strong>@d("crop.tomato")</strong><span aria-hidden="true">↗</span></span>
+    </button>
+    <button class="rocksil-culture-tile" type="button" data-rocksil-culture="orange" aria-controls="rocksil-culture-details" aria-expanded="false" aria-label="@d("crops.open"): @d("crop.orange")">
+      <span class="rocksil-culture-tile-photo"><img src="~/images/rocksil-laranja-ilustrativa.webp" asp-append-version="true" alt="@d("crop.orange.imagealt")" width="1254" height="1254" loading="lazy" /></span>
+      <span class="rocksil-culture-tile-label"><strong>@d("crop.orange")</strong><span aria-hidden="true">↗</span></span>
+    </button>
+    <button class="rocksil-culture-tile" type="button" data-rocksil-culture="berries" aria-controls="rocksil-culture-details" aria-expanded="false" aria-label="@d("crops.open"): @d("crop.berries")">
+      <span class="rocksil-culture-tile-photo"><img src="~/images/rocksil-doc-morango.webp" asp-append-version="true" alt="@d("crop.berries")" width="1731" height="1602" loading="lazy" /></span>
+      <span class="rocksil-culture-tile-label"><strong>@d("crop.berries")</strong><span aria-hidden="true">↗</span></span>
+    </button>
+    <button class="rocksil-culture-tile" type="button" data-rocksil-culture="grape" aria-controls="rocksil-culture-details" aria-expanded="false" aria-label="@d("crops.open"): @d("crop.grape")">
+      <span class="rocksil-culture-tile-photo"><img src="~/images/rocksil-uvas-vinhedo.webp" asp-append-version="true" alt="@d("crop.grape.imagealt")" width="1536" height="1024" loading="lazy" /></span>
+      <span class="rocksil-culture-tile-label"><strong>@d("crop.grape")</strong><span aria-hidden="true">↗</span></span>
+    </button>
+    <button class="rocksil-culture-tile" type="button" data-rocksil-culture="coffee" aria-controls="rocksil-culture-details" aria-expanded="false" aria-label="@d("crops.open"): @d("crop.coffee")">
+      <span class="rocksil-culture-tile-photo"><img src="~/images/rocksil-doc-cafe-colheita.webp" asp-append-version="true" alt="@d("crop.coffee")" width="516" height="387" loading="lazy" /></span>
+      <span class="rocksil-culture-tile-label"><strong>@d("crop.coffee")</strong><span aria-hidden="true">↗</span></span>
+    </button>
+    <button class="rocksil-culture-tile" type="button" data-rocksil-culture="soy" aria-controls="rocksil-culture-details" aria-expanded="false" aria-label="@d("crops.open"): @d("crop.soy")">
+      <span class="rocksil-culture-tile-photo"><img src="~/images/rocksil-doc-soja.webp" asp-append-version="true" alt="@d("crop.soy")" width="2103" height="1577" loading="lazy" /></span>
+      <span class="rocksil-culture-tile-label"><strong>@d("crop.soy")</strong><span aria-hidden="true">↗</span></span>
+    </button>
+    <button class="rocksil-culture-tile" type="button" data-rocksil-culture="corn" aria-controls="rocksil-culture-details" aria-expanded="false" aria-label="@d("crops.open"): @d("crop.corn")">
+      <span class="rocksil-culture-tile-photo"><img src="~/images/rocksil-doc-milho.webp" asp-append-version="true" alt="@d("crop.corn")" width="1445" height="1929" loading="lazy" /></span>
+      <span class="rocksil-culture-tile-label"><strong>@d("crop.corn")</strong><span aria-hidden="true">↗</span></span>
+    </button>
+    <button class="rocksil-culture-tile" type="button" data-rocksil-culture="ornamental" aria-controls="rocksil-culture-details" aria-expanded="false" aria-label="@d("crops.open"): @d("crop.ornamental")">
+      <span class="rocksil-culture-tile-photo"><img src="~/images/rocksil-doc-orquidea.webp" asp-append-version="true" alt="@d("crop.ornamental")" width="333" height="500" loading="lazy" /></span>
+      <span class="rocksil-culture-tile-label"><strong>@d("crop.ornamental")</strong><span aria-hidden="true">↗</span></span>
+    </button>
+  </div>
+  <div class="rocksil-culture-details" id="rocksil-culture-details" hidden>
+    <div class="rocksil-culture-details-top"><span class="eyebrow">@d("crops.details.kicker")</span><button type="button" class="rocksil-culture-close" data-rocksil-close aria-label="@d("crops.close")">@d("crops.close") <span aria-hidden="true">×</span></button></div>
+    <article class="rocksil-culture-entry" data-rocksil-entry="tomato" hidden>
+      <figure class="rocksil-culture-entry-photo"><img src="~/images/rocksil-doc-tomate.webp" asp-append-version="true" alt="@d("crop.tomato")" width="1250" height="1851" loading="lazy" /></figure>
+      <div class="rocksil-culture-entry-copy"><h3>@d("crop.tomato")</h3><p>@d("crop.tomato.detail")</p><p>@d("crop.tomato.field")</p></div>
+    </article>
+    <article class="rocksil-culture-entry" data-rocksil-entry="orange" hidden>
+      <figure class="rocksil-culture-entry-photo"><img src="~/images/rocksil-laranja-ilustrativa.webp" asp-append-version="true" alt="@d("crop.orange.imagealt")" width="1254" height="1254" loading="lazy" /><figcaption>@d("image.illustrative")</figcaption></figure>
+      <div class="rocksil-culture-entry-copy"><h3>@d("crop.orange")</h3><p>@d("crop.orange.detail")</p><p>@d("crop.orange.field")</p></div>
+    </article>
+    <article class="rocksil-culture-entry" data-rocksil-entry="berries" hidden>
+      <figure class="rocksil-culture-entry-photo"><img src="~/images/rocksil-doc-morango.webp" asp-append-version="true" alt="@d("crop.berries")" width="1731" height="1602" loading="lazy" /></figure>
+      <div class="rocksil-culture-entry-copy"><h3>@d("crop.berries")</h3><p>@d("crop.berries.detail")</p><p>@d("crop.berries.field")</p></div>
+    </article>
+    <article class="rocksil-culture-entry" data-rocksil-entry="grape" hidden>
+      <figure class="rocksil-culture-entry-photo"><img src="~/images/rocksil-uvas-vinhedo.webp" asp-append-version="true" alt="@d("crop.grape.imagealt")" width="1536" height="1024" loading="lazy" /><figcaption>@d("image.illustrative")</figcaption></figure>
+      <div class="rocksil-culture-entry-copy"><h3>@d("crop.grape")</h3><p>@d("crop.grape.detail")</p><p>@d("crop.grape.field")</p></div>
+    </article>
+    <article class="rocksil-culture-entry" data-rocksil-entry="coffee" hidden>
+      <figure class="rocksil-culture-entry-photo"><img src="~/images/rocksil-doc-cafe-colheita.webp" asp-append-version="true" alt="@d("crop.coffee")" width="516" height="387" loading="lazy" /></figure>
+      <div class="rocksil-culture-entry-copy"><h3>@d("crop.coffee")</h3><p>@d("crop.coffee.detail")</p><p>@d("crop.coffee.field")</p></div>
+    </article>
+    <article class="rocksil-culture-entry" data-rocksil-entry="soy" hidden>
+      <figure class="rocksil-culture-entry-photo"><img src="~/images/rocksil-doc-soja.webp" asp-append-version="true" alt="@d("crop.soy")" width="2103" height="1577" loading="lazy" /></figure>
+      <div class="rocksil-culture-entry-copy"><h3>@d("crop.soy")</h3><p>@d("crop.soy.detail")</p><p>@d("crop.soy.field")</p></div>
+    </article>
+    <article class="rocksil-culture-entry" data-rocksil-entry="corn" hidden>
+      <figure class="rocksil-culture-entry-photo"><img src="~/images/rocksil-doc-milho.webp" asp-append-version="true" alt="@d("crop.corn")" width="1445" height="1929" loading="lazy" /></figure>
+      <div class="rocksil-culture-entry-copy"><h3>@d("crop.corn")</h3><p>@d("crop.corn.detail")</p><p>@d("crop.corn.field")</p></div>
+    </article>
+    <article class="rocksil-culture-entry" data-rocksil-entry="ornamental" hidden>
+      <figure class="rocksil-culture-entry-photo"><img src="~/images/rocksil-doc-orquidea.webp" asp-append-version="true" alt="@d("crop.ornamental")" width="333" height="500" loading="lazy" /></figure>
+      <div class="rocksil-culture-entry-copy"><h3>@d("crop.ornamental")</h3><p>@d("crop.ornamental.detail")</p><p>@d("crop.ornamental.field")</p></div>
+    </article>
+    <div class="rocksil-culture-common"><h4>@d("crops.common.title")</h4><p>@d("crops.common")</p></div>
+  </div>
+  <p class="rocksil-culture-source">@d("crops.lead")</p>
+</div></section>
+<section class="cta-strip"><div class="shell cta-inner"><div><span class="eyebrow eyebrow-light">ROCKSIL® PLUS</span><h2>@t("rocksil.cta")</h2></div><a class="button button-light" href="/@lang/contato">@t("cta.talk") <span aria-hidden="true">↗</span></a></div></section>
+
+@section Scripts {
+  <script src="~/js/rocksil-culturas.js" asp-append-version="true" defer></script>
+}
