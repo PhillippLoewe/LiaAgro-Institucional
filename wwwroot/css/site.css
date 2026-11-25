@@ -457,3 +457,105 @@
   .product-hero-copy h1.rocksil-word-title{font-size:clamp(39px,9.15vw,53px)}
   .rocksil-word-title .rocksil-letter-i img{top:-.18em;width:.56em;height:.41em}
 }
+
+
+/* LIA AGRO — Refinamentos de abertura, produtos e História — novembro/2026 */
+/* Cabeçalho: assinatura alinhada ao início do nome e com espaçamento consistente. */
+.site-header .brand{align-items:center;gap:11px}
+.site-header .brand-copy{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:0;min-width:0;text-align:left}
+.site-header .brand-copy strong{display:block;line-height:1.08}
+.site-header .brand-copy small{display:block;margin:6px 0 0;padding:0;line-height:1.32;text-align:left;letter-spacing:0;font-size:clamp(10px,.9vw,12px);font-weight:700;max-width:230px;color:#356b43}
+@media(max-width:1250px){.site-header .brand-copy small{font-size:10px;max-width:195px}}
+@media(max-width:480px){.site-header .brand{gap:8px}.site-header .brand-copy small{font-size:9px;line-height:1.26;max-width:165px;margin-top:4px}}
+
+/* A chamada internacional aparece após a apresentação, antes dos botões. */
+.hero-home .home-international-highlight{display:flex;align-items:flex-start;gap:12px;max-width:640px;margin:0 0 29px;padding:15px 19px;border:1px solid rgba(220,243,210,.32);border-left:3px solid #c9e5a5;border-radius:12px;background:rgba(6,39,20,.55);color:#eff9eb;font-size:clamp(13px,1.1vw,16px);line-height:1.55;font-weight:700;box-shadow:0 10px 28px rgba(0,0,0,.1)}
+.home-international-icon{flex:none;display:inline-grid;place-items:center;width:27px;height:27px;border-radius:50%;background:rgba(217,242,199,.15);color:#d6ecb2;font-size:23px;line-height:1}
+@media(max-width:770px){.hero-home .home-international-highlight{max-width:100%;margin-bottom:24px;padding:12px 14px}}
+
+/* Cartões dos produtos: leitura imediata das duas áreas de atuação. */
+.products-section .product-card{height:360px}
+.products-section .product-card-copy{top:28px;bottom:27px;width:67%;left:30px}
+.products-section .product-card .overline{font-size:clamp(11px,1.02vw,13px);line-height:1.45;letter-spacing:.05em}
+.products-section .product-card h3{font-size:clamp(33px,2.75vw,42px);margin:18px 0 11px;line-height:1.12}
+.products-section .product-card .product-card-tagline{font-size:clamp(14px,1.12vw,17px)!important;line-height:1.33!important;max-width:300px!important;margin:0 0 10px!important;font-weight:800}
+.products-section .product-card-copy > p:not(.product-card-tagline){font-size:13px;line-height:1.48;max-width:275px}
+.products-section .product-card.rocksil-card .rocksil-card-heading{width:min(100%,300px);gap:5px;margin:18px 0 12px;align-items:flex-end}
+.products-section .product-card.rocksil-card .rocksil-card-wordmark{width:min(72%,216px);max-width:216px}
+.products-section .product-card.rocksil-card .rocksil-card-heading small{font-size:clamp(17px,1.6vw,23px);font-weight:800;line-height:1.05;vertical-align:baseline}
+.products-section .product-card.rocksil-card .rocksil-card-heading .registered-mark{right:auto;left:min(70%,210px);top:9px;font-size:11px}
+.products-section .rocksil-card>img{object-position:58% center}
+@media(max-width:1060px){.products-section .product-card{height:360px}.products-section .product-card-copy{left:23px;width:70%}.products-section .product-card .overline{font-size:11px}.products-section .product-card h3{font-size:33px}.products-section .product-card.rocksil-card .rocksil-card-wordmark{width:min(71%,190px)}.products-section .product-card.rocksil-card .rocksil-card-heading small{font-size:18px}}
+@media(max-width:770px){.products-section .product-card{height:340px}.products-section .product-card-copy{width:68%}.products-section .product-card .product-card-tagline{font-size:15px!important}.products-section .product-card.rocksil-card .rocksil-card-wordmark{width:min(72%,214px);max-width:214px}}
+@media(max-width:480px){.products-section .product-card{height:342px}.products-section .product-card-copy{left:19px;top:25px;bottom:25px;width:76%}.products-section .product-card .overline{font-size:10px}.products-section .product-card h3{font-size:clamp(28px,7vw,34px)}.products-section .product-card .product-card-tagline{font-size:14px!important;max-width:230px!important}.products-section .product-card-copy>p:not(.product-card-tagline){font-size:12px}.products-section .product-card.rocksil-card .rocksil-card-heading{width:min(100%,250px);margin:16px 0 12px}.products-section .product-card.rocksil-card .rocksil-card-wordmark{width:min(71%,175px)}.products-section .product-card.rocksil-card .rocksil-card-heading small{font-size:17px}.products-section .product-card.rocksil-card .rocksil-card-heading .registered-mark{left:70%;top:8px}}
+
+/* Nossa História: anos e IFOAM compartilhando o mesmo painel institucional. */
+.story-section .story-callout{padding:clamp(24px,3vw,42px);min-height:0}
+.story-milestones{display:flex;align-items:center;justify-content:space-between;gap:18px;padding-bottom:23px;margin-bottom:23px;border-bottom:1px solid #cbdcc5}
+.story-years{flex:1 1 auto;min-width:0}
+.story-years .story-big{display:block;font-size:clamp(77px,7vw,125px);line-height:1;letter-spacing:-.095em;white-space:nowrap}
+.story-years h3{margin:5px 0 0;font-size:clamp(16px,1.6vw,22px);line-height:1.3}
+.story-ifoam{flex:0 1 140px;min-width:0;max-width:145px;margin:0;display:flex;align-items:center;flex-direction:column;gap:7px;padding:11px;background:#fff;border:1px solid #dae8d7;border-radius:14px}
+.story-ifoam img{width:100%;height:auto;max-height:78px;object-fit:contain}
+.story-ifoam figcaption{text-align:center;font-weight:700;font-size:11px;line-height:1.4;color:#20583a}
+.story-export{margin:0;font-size:14px;line-height:1.7;color:#405a48}
+@media(max-width:1100px){.story-milestones{flex-wrap:wrap}.story-ifoam{flex-basis:140px}}
+@media(max-width:770px){.story-milestones{flex-wrap:nowrap}.story-years .story-big{font-size:clamp(75px,17vw,110px)}.story-ifoam{flex-basis:145px}}
+@media(max-width:440px){.story-section .story-callout{padding:21px}.story-milestones{gap:11px}.story-years .story-big{font-size:clamp(63px,17vw,80px)}.story-years h3{font-size:15px}.story-ifoam{flex-basis:120px;padding:7px}.story-ifoam figcaption{font-size:10px}}
+
+/* LIA AGRO — alinhamento final aprovado em 25/11/2026.
+   Desktop: baixar apenas a coluna de textos à direita do símbolo.
+   Celular: compensar o deslocamento para centralização visual. */
+.site-header .brand-copy {
+    position: relative;
+    top: 13px;
+}
+@media (max-width: 770px) {
+    .site-header .brand-copy {
+        top: -7px;
+    }
+}
+
+/* LIA AGRO — Diferenciacao cromatica dos cartoes clicaveis.
+   Efeito sutil parado; mais evidente ao passar o mouse ou usar o teclado.
+   Preserva imagens, textos, dimensoes e comportamento responsivo. */
+.products-section .product-card.rocksil-card {
+  border-color: #aed0a6;
+  box-shadow: 0 10px 25px rgba(31, 113, 55, .17),
+              0 0 0 1px rgba(49, 137, 62, .10);
+}
+.products-section .product-card.protego-card {
+  border-color: #efb58b;
+  box-shadow: 0 10px 25px rgba(209, 101, 33, .17),
+              0 0 0 1px rgba(224, 125, 58, .10);
+}
+.products-section .product-card.rocksil-card:hover,
+.products-section .product-card.rocksil-card:focus-visible {
+  border-color: #5faa61;
+  box-shadow: 0 18px 38px rgba(35, 118, 55, .26),
+              0 0 0 2px rgba(77, 153, 76, .17);
+}
+.products-section .product-card.protego-card:hover,
+.products-section .product-card.protego-card:focus-visible {
+  border-color: #db843b;
+  box-shadow: 0 18px 38px rgba(216, 104, 29, .25),
+              0 0 0 2px rgba(229, 137, 73, .17);
+}
+.products-section .product-card.protego-card .product-card-tagline {
+  color: #b95418 !important;
+}
+.products-section .product-card.protego-card .text-link {
+  color: #a85016;
+  border-bottom-color: #a85016;
+}
+.products-section .product-card.rocksil-card .product-card-tagline {
+  color: #2a7841 !important;
+}
+.products-section .product-card.rocksil-card .text-link {
+  color: #246a3c;
+  border-bottom-color: #246a3c;
+}
+@media (prefers-reduced-motion: reduce) {
+  .products-section .product-card,
+  .products-section .product-card > img { transition: none; }
+}
