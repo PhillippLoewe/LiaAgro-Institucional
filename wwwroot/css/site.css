@@ -559,3 +559,21 @@
   .products-section .product-card,
   .products-section .product-card > img { transition: none; }
 }
+
+
+/* LIA AGRO — Pioneirismo internacional: halo dourado externo.
+   Preserva o verde interno, o texto, a borda, a posicao e as dimensoes. */
+.hero-home .home-international-highlight {
+  box-shadow:
+    0 0 0 1px rgba(241, 203, 112, .24),
+    0 0 17px 3px rgba(232, 178, 65, .32),
+    0 10px 28px rgba(0, 0, 0, .16);
+}
+@media (max-width: 770px) {
+  .hero-home .home-international-highlight {
+    box-shadow:
+      0 0 0 1px rgba(241, 203, 112, .20),
+      0 0 12px 2px rgba(232, 178, 65, .25),
+      0 8px 20px rgba(0, 0, 0, .14);
+  }
+}
